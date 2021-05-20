@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- accordion -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="text-center">Accordion</h1>
+            <div class="accordion" id="accordion1">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="head1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">First Paragraph</button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="head1" data-bs-parent="#accordion1">
+                  <div class="accordion-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="head2">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Second Paragraph</button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="head2" data-bs-parent="#accordion1">
+                  <div class="accordion-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="h1 text-center">Accordion-Flush</h2>
+            <div class="accordion accordion-flush" id="accordion2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="head3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">First-paragraph</button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="head3" data-bs-parent="#accordion2">
+                  <div class="accordion-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="head4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">First-paragraph</button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="head4" data-bs-parent="#accordion2">
+                  <div class="accordion-body">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Alert -->
+    <section>  
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="text-center">Alert</h2>
+            <div class="alert alert-info" role="alert">
+              A simple alert
+            </div>
+          </div>
+           <div class="col-lg-6">
+            <h2 class="text-center">Alert link</h2>
+            <div class="alert alert-info" role="alert">
+              A simple alert <a href="#" class="alert-link">link</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="text-center">Alert</h1>
+            <div class="alert alert-success" role="alert">
+              <h3 class="alert alert-heading">Well done</h3>
+              <hr>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="text-center">Alert dismissible</h2>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+             well done.
+             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Badge -->
+    <section class="mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="text-center">Badge</h1>
+            <h4>Example heading <span class="badge bg-warning">new</span></h4>
+            <h3>Example heading <span class="badge bg-warning">new</span></h3>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="text-center">Badge</h2>
+            <button type="button" class="btn btn-primary">Notification <span class="badge rounded-pill bg-secondary">9</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumb and button -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <!-- breadcrumb -->
+          <div class="col-lg-6">
+            <h2>Breadcrumb</h2>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+          </div>
+          <!-- button -->
+          <div class="col-lg-6">
+            <h2 class="text-center">Button</h2>
+            <button class="btn btn-lg btn-danger">Click</button>
+            <a href="#" class="btn btn-sm btn-success">Click</a>
+            <input type="submit" class="btn btn-outline-info" name="s">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="text-center">Button group</h2>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary">Left</button>
+              <button type="button" class="btn btn-outline-warning">Middle</button>
+              <button type="button" class="btn btn-outline-danger">Right</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="text-center">Button toolbar</h2>
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-primary">1</button>
+                <button type="button" class="btn btn-outline-primary">2</button>
+                <button type="button" class="btn btn-outline-primary">3</button>
+                <button type="button" class="btn btn-outline-primary">4</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- card -->
+    <section class="mb-3 mt-3">
+      <h2 class="text-center">Card</h2>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <img src="images/img2.jpg" class="card-img-top" alt="image">
+              <div class="card-body">
+                <h1 class="card-title">Header</h1>
+                <h2 class="card-subtitle text-muted">Subtitle</h2>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header">Featured</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">First Item</li>
+                <li class="list-group-item">Second Item</li>
+                <li class="list-group-item">Third Item</li>
+              </ul>
+              <div class="card-footer">Footer</div>
+            </div>
+            <div class="card mt-3">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title">Header</h1>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn btn-outline-info">Click</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-3">
+            <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/img3.jpg" alt="somethig" class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <button type="button" class="btn-close" aria-label="Close"></button>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- collapse -->
+    <section>
+      <div class="container mb-5">
+        <h2 class="text-center">Collapse</h2>
+        <div class="row">
+          <div class="col">
+            <p>
+              <a href="#collapseExample" class="btn btn-outline-info" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click</a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+            </div>
+          </div>
+          <div class="col">
+            <p>
+              <a href="#collapseExample1" class="btn btn-outline-info" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">Click for first item</a>
+
+              <button type="button" class="btn btn-outline-info" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">Click for second item</button>
+
+              <button type="button" class="btn btn-outline-info" role="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="true" aria-controls="collapseExample1 collapseExample2">Click for both item</button>
+            </p>
+
+            <div class="collapse multi-collapse" id="collapseExample1">
+              <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+            </div>
+            <div class="collapse multi-collapse" id="collapseExample2">
+              <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- dropdown toggle -->
+    <section>
+      <div class="container mb-3">
+        <h2 class="text-center">Dropdown</h2>
+        <div class="row">
+          <div class="col">
+            <div class="dropdown">
+              <button type="button" class="btn btn-outline-warning dropdown-toggle" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">Dropdown Button</button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown1">
+                <li><a href="#" class="dropdown-item">1</a></li>
+                <li><a href="#" class="dropdown-item">2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a href="#" class="dropdown-item">3</a></li>
+                <li><a href="#" class="dropdown-item">4</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="btn-group">
+              <button class="btn btn-outline-warning">Dropdown Button</button>
+              <button type="button" class="btn btn-outline-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">1</a></li>
+                <li><a href="#" class="dropdown-item">2</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a href="#" class="dropdown-item">3</a></li>
+                <li><a href="#" class="dropdown-item">4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- list group -->
+    <section class="mb-3 mt-3">
+      <h2 class="text-center">List group</h2>
+      <div class="container">
+        <ol class="list-group">
+          <li class="list-group-item">item-1</li>
+          <li class="list-group-item">item-2</li>
+          <li class="list-group-item">item-3</li>
+        </ol>
+      </div>
+    </section>
+
+     <!-- JS links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
